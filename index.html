@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+<div class="container">
+      <div class="box">
+         <div class="shapes options">
+            <div class="text">Shapes</div>
+            <div class="rec tool" id="rectangle">
+                <div class="r"><img src="rectangle.svg" alt=""></div>
+                <div class="tex">Rectangle</div>
+            </div>
+            <div class="rec tool" id="circle">
+                <div class="r"><img src="circle.svg" alt=""></div>
+                <div class="tex">Circle</div>
+            </div>
+            <div class="rec  tool" id="triangle">
+                <div class="r"><img class="imge" src="triangle.svg" alt=""></div>
+                <div class="tex">Triangle</div>
+            </div>
+            <div class="input  ">
+                <input type="checkbox"  id="fill-color">
+                <label for="fill-color">Fill color</label>
+            </div>
+
+            <div class="opt">Options</div>
+            <div class="rec active tool" id="brush">
+                 <div class="img"><img src="brush.svg" alt=""></div>
+                 <div class="text">Brush</div>
+            </div>
+            <div class="rec  tool" id="eraser">
+                <div class="img"><img src="eraser.svg" alt=""></div>
+                <div class="text ">Eraser</div>
+            </div>
+            <div class="inpt">
+                 <input type="range" min="1" max="30" value="5" class="size-slider" id="myRange">
+            </div>
+            <div class="colors">
+                 <div class="first selected color1"></div>
+                 <div class="first color2"></div>
+                 <div class="first color3"></div>
+                 <div class="first color4"></div>
+                 <!-- <div class="first color5">
+                    <div class="first color6"><input type="color" id="color-picker" value="#4A98F7"></div>
+
+                 </div> -->
+                    <input type="color" class="colorpic"  id="color-picker" value="#4A98F7">
+
+                 <!-- <div class="first">
+                    <input type="color" id="color-picker" value="#4A98F7">
+                 </div> -->
+            </div>
+            <div class="clear">Clear Canvas</div>
+            <div class="saveimg">Save As Image</div>
+         </div>
+         <div class="canvas">
+             <canvas></canvas>
+         </div>
+      </div>
+      <div class="box"></div>
+
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
